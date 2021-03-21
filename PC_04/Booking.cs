@@ -32,6 +32,35 @@ namespace PC_04
             loadGridPilihKamar();
             loadComboJenis();
             loadComboKamar();
+            loadAutoComplete();
+        }
+
+        void loadAutoComplete()
+        {
+            try
+            {
+                connection = new SqlConnection(Connection.connectionString);
+                connection.Open();
+
+                command = new SqlCommand("select nik from tamu", connection);
+                reader = command.ExecuteReader();
+
+                AutoCompleteStringCollection sourceAutoComplete = new AutoCompleteStringCollection();
+
+                while (reader.Read())
+                {
+                    sourceAutoComplete.Add(reader[0].ToString());
+                }
+
+                textBoNik.AutoCompleteCustomSource = sourceAutoComplete;
+
+                reader.Close();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi Kesalahan! " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         void loadComboStatus()

@@ -54,5 +54,11 @@ namespace PC_04
             BookingDetail detail = new BookingDetail();
             detail.ShowDialog();
         }
+
+        private void panel8_Click(object sender, EventArgs e)
+        {
+            Report report = new Report();
+            report.ShowDialog();
+        }
     }
 }

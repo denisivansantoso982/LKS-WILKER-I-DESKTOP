@@ -30,7 +30,7 @@ namespace PC_04
                 connection = new SqlConnection(Connection.connectionString);
                 connection.Open();
 
-                adapter = new SqlDataAdapter("select * from booking inner join tamu on booking.nik_tamu = tamu.id where tamu.email = '" + textBoxEmail.Text + "' and booking.tgl_check_in = '" + dateTimePickerCheckIn.Value.Date + "'", connection);
+                adapter = new SqlDataAdapter("select tgl_booking, nik, nama, tgl_check_in, tgl_check_out from booking inner join tamu on booking.nik_tamu = tamu.id where tamu.email = '" + textBoxEmail.Text + "' and booking.tgl_check_in = '" + dateTimePickerCheckIn.Value.Date + "'", connection);
                 dtCheck = new DataTable();
                 adapter.Fill(dtCheck);
 
@@ -42,6 +42,13 @@ namespace PC_04
                 else
                 {
                     gridCheckBooking.DataSource = dtCheck;
+                    gridCheckBooking.Columns[0].HeaderText = "Booking";
+                    gridCheckBooking.Columns[1].HeaderText = "NIK";
+                    gridCheckBooking.Columns[2].HeaderText = "Nama";
+                    gridCheckBooking.Columns[3].HeaderText = "Check In";
+                    gridCheckBooking.Columns[4].HeaderText = "Check Out";
+
+                    gridCheckBooking.Columns[1].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
                 }
 
                 connection.Close();
