@@ -369,16 +369,17 @@ namespace PC_04
 
                             if (reader.HasRows)
                             {
+                                int bookingId = Convert.ToInt32(reader[0]);
+                                reader.Close();
+
                                 foreach (DataGridViewRow row in gridPilihKamar.Rows)
                                 {
-                                    int bookingId = Convert.ToInt32(reader[0]);
                                     int tarif = dtKamar.Rows[comboBoxNoKamar.SelectedIndex].Field<int>(4);
-                                    reader.Close();
                                     command = new SqlCommand("INSERT INTO detail_booking VALUES(" + bookingId + ", " + Convert.ToInt32(row.Cells[3].Value) + ", " + Convert.ToInt32(row.Cells[5].Value) + ")", connection);
                                     command.ExecuteNonQuery();
-
-                                    MessageBox.Show("Booking sudah ditambahkan!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 }
+
+                                MessageBox.Show("Booking sudah ditambahkan!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             } else
                             {
                                 MessageBox.Show("Data booking tidak dapat ditemukan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);

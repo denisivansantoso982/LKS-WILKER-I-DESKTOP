@@ -36,7 +36,7 @@ namespace PC_04
 
                 if (dtCheck.Rows.Count < 1)
                 {
-                    MessageBox.Show("Data booking tidak ditemukan! Harap booking terlebih dahulu!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Data booking tidak ditemukan! Harap booking terlebih dahulu!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     gridCheckBooking.DataSource = null;
                 }
                 else

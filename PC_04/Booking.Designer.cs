@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.dateTimePickerBooking = new System.Windows.Forms.DateTimePicker();
@@ -74,10 +74,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 28F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(22, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(29, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 51);
+            this.label2.Size = new System.Drawing.Size(193, 62);
             this.label2.TabIndex = 7;
             this.label2.Text = "Booking";
             // 
@@ -92,10 +91,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(886, 2);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(1181, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(26, 28);
+            this.button2.Size = new System.Drawing.Size(35, 34);
             this.button2.TabIndex = 12;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = false;
@@ -104,10 +103,10 @@
             // dateTimePickerBooking
             // 
             this.dateTimePickerBooking.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerBooking.Location = new System.Drawing.Point(172, 108);
-            this.dateTimePickerBooking.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePickerBooking.Location = new System.Drawing.Point(229, 133);
+            this.dateTimePickerBooking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerBooking.Name = "dateTimePickerBooking";
-            this.dateTimePickerBooking.Size = new System.Drawing.Size(249, 29);
+            this.dateTimePickerBooking.Size = new System.Drawing.Size(331, 34);
             this.dateTimePickerBooking.TabIndex = 13;
             // 
             // label1
@@ -116,10 +115,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(27, 112);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(36, 138);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 21);
+            this.label1.Size = new System.Drawing.Size(150, 28);
             this.label1.TabIndex = 20;
             this.label1.Text = "Tanggal Booking";
             // 
@@ -129,23 +127,22 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(27, 158);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(36, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 21);
+            this.label3.Size = new System.Drawing.Size(94, 28);
             this.label3.TabIndex = 22;
             this.label3.Text = "NIK Tamu";
             // 
             // textBoNik
             // 
-            this.textBoNik.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBoNik.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBoNik.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoNik.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoNik.Location = new System.Drawing.Point(172, 153);
-            this.textBoNik.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoNik.Location = new System.Drawing.Point(229, 188);
+            this.textBoNik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoNik.MaxLength = 20;
             this.textBoNik.Name = "textBoNik";
-            this.textBoNik.Size = new System.Drawing.Size(249, 29);
+            this.textBoNik.Size = new System.Drawing.Size(331, 34);
             this.textBoNik.TabIndex = 21;
             this.textBoNik.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxJumlahKamar_KeyPress);
             // 
@@ -155,20 +152,19 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(27, 207);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(36, 255);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 21);
+            this.label4.Size = new System.Drawing.Size(154, 28);
             this.label4.TabIndex = 24;
             this.label4.Text = "Tanggal Check In";
             // 
             // dateTimePickerCheckIn
             // 
             this.dateTimePickerCheckIn.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerCheckIn.Location = new System.Drawing.Point(172, 203);
-            this.dateTimePickerCheckIn.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePickerCheckIn.Location = new System.Drawing.Point(229, 250);
+            this.dateTimePickerCheckIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerCheckIn.Name = "dateTimePickerCheckIn";
-            this.dateTimePickerCheckIn.Size = new System.Drawing.Size(249, 29);
+            this.dateTimePickerCheckIn.Size = new System.Drawing.Size(331, 34);
             this.dateTimePickerCheckIn.TabIndex = 23;
             this.dateTimePickerCheckIn.ValueChanged += new System.EventHandler(this.dateTimePickerCheckIn_ValueChanged);
             // 
@@ -178,20 +174,19 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(27, 253);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(36, 311);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 21);
+            this.label5.Size = new System.Drawing.Size(170, 28);
             this.label5.TabIndex = 26;
             this.label5.Text = "Tanggal Check Out";
             // 
             // dateTimePickerCheckOut
             // 
             this.dateTimePickerCheckOut.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerCheckOut.Location = new System.Drawing.Point(172, 249);
-            this.dateTimePickerCheckOut.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePickerCheckOut.Location = new System.Drawing.Point(229, 306);
+            this.dateTimePickerCheckOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerCheckOut.Name = "dateTimePickerCheckOut";
-            this.dateTimePickerCheckOut.Size = new System.Drawing.Size(249, 29);
+            this.dateTimePickerCheckOut.Size = new System.Drawing.Size(331, 34);
             this.dateTimePickerCheckOut.TabIndex = 25;
             this.dateTimePickerCheckOut.ValueChanged += new System.EventHandler(this.dateTimePickerCheckOut_ValueChanged);
             // 
@@ -201,21 +196,20 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(484, 110);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(645, 135);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 21);
+            this.label6.Size = new System.Drawing.Size(132, 28);
             this.label6.TabIndex = 28;
             this.label6.Text = "Jumlah Kamar";
             // 
             // textBoxJumlahKamar
             // 
             this.textBoxJumlahKamar.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxJumlahKamar.Location = new System.Drawing.Point(616, 107);
-            this.textBoxJumlahKamar.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxJumlahKamar.Location = new System.Drawing.Point(821, 132);
+            this.textBoxJumlahKamar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxJumlahKamar.MaxLength = 50;
             this.textBoxJumlahKamar.Name = "textBoxJumlahKamar";
-            this.textBoxJumlahKamar.Size = new System.Drawing.Size(188, 29);
+            this.textBoxJumlahKamar.Size = new System.Drawing.Size(249, 34);
             this.textBoxJumlahKamar.TabIndex = 27;
             this.textBoxJumlahKamar.Text = "1";
             this.textBoxJumlahKamar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxJumlahKamar_KeyPress);
@@ -231,10 +225,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(808, 107);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(1077, 132);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 28);
+            this.button1.Size = new System.Drawing.Size(35, 34);
             this.button1.TabIndex = 29;
             this.button1.Text = "-";
             this.button1.UseVisualStyleBackColor = false;
@@ -251,10 +245,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(838, 107);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(1117, 132);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(26, 28);
+            this.button3.Size = new System.Drawing.Size(35, 34);
             this.button3.TabIndex = 30;
             this.button3.Text = "+";
             this.button3.UseVisualStyleBackColor = false;
@@ -266,22 +260,21 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(484, 158);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(645, 194);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 21);
+            this.label7.Size = new System.Drawing.Size(131, 28);
             this.label7.TabIndex = 32;
             this.label7.Text = "Total Transaksi";
             // 
             // textBoxTotal
             // 
             this.textBoxTotal.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTotal.Location = new System.Drawing.Point(616, 153);
-            this.textBoxTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTotal.Location = new System.Drawing.Point(821, 188);
+            this.textBoxTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTotal.MaxLength = 50;
             this.textBoxTotal.Name = "textBoxTotal";
             this.textBoxTotal.ReadOnly = true;
-            this.textBoxTotal.Size = new System.Drawing.Size(249, 29);
+            this.textBoxTotal.Size = new System.Drawing.Size(331, 34);
             this.textBoxTotal.TabIndex = 31;
             this.textBoxTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxJumlahKamar_KeyPress);
             // 
@@ -291,21 +284,20 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(484, 203);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(645, 250);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 21);
+            this.label8.Size = new System.Drawing.Size(124, 28);
             this.label8.TabIndex = 34;
             this.label8.Text = "Jumlah Bayar";
             // 
             // textBoxBayar
             // 
             this.textBoxBayar.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBayar.Location = new System.Drawing.Point(616, 198);
-            this.textBoxBayar.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxBayar.Location = new System.Drawing.Point(821, 244);
+            this.textBoxBayar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxBayar.MaxLength = 50;
             this.textBoxBayar.Name = "textBoxBayar";
-            this.textBoxBayar.Size = new System.Drawing.Size(249, 29);
+            this.textBoxBayar.Size = new System.Drawing.Size(331, 34);
             this.textBoxBayar.TabIndex = 33;
             this.textBoxBayar.Text = "0";
             this.textBoxBayar.TextChanged += new System.EventHandler(this.textBoxBayar_TextChanged);
@@ -317,22 +309,21 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(484, 249);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(645, 306);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 21);
+            this.label9.Size = new System.Drawing.Size(96, 28);
             this.label9.TabIndex = 36;
             this.label9.Text = "Sisa Bayar";
             // 
             // textBoxSisa
             // 
             this.textBoxSisa.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSisa.Location = new System.Drawing.Point(616, 244);
-            this.textBoxSisa.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxSisa.Location = new System.Drawing.Point(821, 300);
+            this.textBoxSisa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSisa.MaxLength = 50;
             this.textBoxSisa.Name = "textBoxSisa";
             this.textBoxSisa.ReadOnly = true;
-            this.textBoxSisa.Size = new System.Drawing.Size(249, 29);
+            this.textBoxSisa.Size = new System.Drawing.Size(331, 34);
             this.textBoxSisa.TabIndex = 35;
             this.textBoxSisa.Text = "0";
             this.textBoxSisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxJumlahKamar_KeyPress);
@@ -343,10 +334,9 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Nirmala UI Semilight", 24F);
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(24, 319);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(32, 393);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(313, 45);
+            this.label10.Size = new System.Drawing.Size(390, 54);
             this.label10.TabIndex = 37;
             this.label10.Text = "Data Transaksi Kamar";
             // 
@@ -356,10 +346,10 @@
             this.comboBoxJenis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxJenis.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxJenis.FormattingEnabled = true;
-            this.comboBoxJenis.Location = new System.Drawing.Point(156, 393);
-            this.comboBoxJenis.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxJenis.Location = new System.Drawing.Point(208, 484);
+            this.comboBoxJenis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxJenis.Name = "comboBoxJenis";
-            this.comboBoxJenis.Size = new System.Drawing.Size(228, 29);
+            this.comboBoxJenis.Size = new System.Drawing.Size(303, 36);
             this.comboBoxJenis.TabIndex = 39;
             this.comboBoxJenis.SelectionChangeCommitted += new System.EventHandler(this.comboBoxJenis_SelectionChangeCommitted);
             // 
@@ -369,10 +359,9 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(27, 396);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(36, 487);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 21);
+            this.label11.Size = new System.Drawing.Size(112, 28);
             this.label11.TabIndex = 38;
             this.label11.Text = "Jenis Kamar";
             // 
@@ -382,10 +371,9 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label12.Location = new System.Drawing.Point(27, 441);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(36, 543);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 21);
+            this.label12.Size = new System.Drawing.Size(133, 28);
             this.label12.TabIndex = 41;
             this.label12.Text = "Nomor Kamar";
             // 
@@ -395,10 +383,10 @@
             this.comboBoxNoKamar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxNoKamar.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxNoKamar.FormattingEnabled = true;
-            this.comboBoxNoKamar.Location = new System.Drawing.Point(156, 441);
-            this.comboBoxNoKamar.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxNoKamar.Location = new System.Drawing.Point(208, 543);
+            this.comboBoxNoKamar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxNoKamar.Name = "comboBoxNoKamar";
-            this.comboBoxNoKamar.Size = new System.Drawing.Size(228, 29);
+            this.comboBoxNoKamar.Size = new System.Drawing.Size(303, 36);
             this.comboBoxNoKamar.TabIndex = 42;
             // 
             // gridPilihKamar
@@ -406,49 +394,49 @@
             this.gridPilihKamar.AllowUserToAddRows = false;
             this.gridPilihKamar.AllowUserToDeleteRows = false;
             this.gridPilihKamar.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            this.gridPilihKamar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.gridPilihKamar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridPilihKamar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPilihKamar.BackgroundColor = System.Drawing.Color.White;
             this.gridPilihKamar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridPilihKamar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridPilihKamar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridPilihKamar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridPilihKamar.DefaultCellStyle = dataGridViewCellStyle15;
-            this.gridPilihKamar.Location = new System.Drawing.Point(491, 366);
-            this.gridPilihKamar.Margin = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridPilihKamar.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gridPilihKamar.Location = new System.Drawing.Point(655, 450);
+            this.gridPilihKamar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridPilihKamar.MultiSelect = false;
             this.gridPilihKamar.Name = "gridPilihKamar";
             this.gridPilihKamar.ReadOnly = true;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridPilihKamar.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridPilihKamar.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gridPilihKamar.RowHeadersVisible = false;
             this.gridPilihKamar.RowTemplate.Height = 24;
             this.gridPilihKamar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridPilihKamar.ShowCellToolTips = false;
-            this.gridPilihKamar.Size = new System.Drawing.Size(374, 150);
+            this.gridPilihKamar.Size = new System.Drawing.Size(499, 185);
             this.gridPilihKamar.TabIndex = 43;
             // 
             // buttonTambah
@@ -462,10 +450,10 @@
             this.buttonTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTambah.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.buttonTambah.ForeColor = System.Drawing.Color.White;
-            this.buttonTambah.Location = new System.Drawing.Point(212, 487);
-            this.buttonTambah.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonTambah.Location = new System.Drawing.Point(283, 599);
+            this.buttonTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTambah.Name = "buttonTambah";
-            this.buttonTambah.Size = new System.Drawing.Size(83, 28);
+            this.buttonTambah.Size = new System.Drawing.Size(111, 34);
             this.buttonTambah.TabIndex = 44;
             this.buttonTambah.Text = "Tambah";
             this.buttonTambah.UseVisualStyleBackColor = false;
@@ -482,10 +470,10 @@
             this.buttonHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHapus.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.buttonHapus.ForeColor = System.Drawing.Color.White;
-            this.buttonHapus.Location = new System.Drawing.Point(299, 487);
-            this.buttonHapus.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonHapus.Location = new System.Drawing.Point(399, 599);
+            this.buttonHapus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonHapus.Name = "buttonHapus";
-            this.buttonHapus.Size = new System.Drawing.Size(83, 28);
+            this.buttonHapus.Size = new System.Drawing.Size(111, 34);
             this.buttonHapus.TabIndex = 45;
             this.buttonHapus.Text = "Hapus";
             this.buttonHapus.UseVisualStyleBackColor = false;
@@ -497,10 +485,10 @@
             this.comboBoxStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxStatus.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Location = new System.Drawing.Point(616, 290);
-            this.comboBoxStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxStatus.Location = new System.Drawing.Point(821, 357);
+            this.comboBoxStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxStatus.Name = "comboBoxStatus";
-            this.comboBoxStatus.Size = new System.Drawing.Size(249, 29);
+            this.comboBoxStatus.Size = new System.Drawing.Size(331, 36);
             this.comboBoxStatus.TabIndex = 47;
             // 
             // label13
@@ -509,10 +497,9 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Location = new System.Drawing.Point(484, 292);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(645, 359);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 21);
+            this.label13.Size = new System.Drawing.Size(114, 28);
             this.label13.TabIndex = 46;
             this.label13.Text = "Status Bayar";
             // 
@@ -527,10 +514,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(488, 561);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(651, 690);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 28);
+            this.button4.Size = new System.Drawing.Size(111, 34);
             this.button4.TabIndex = 48;
             this.button4.Text = "Simpan";
             this.button4.UseVisualStyleBackColor = false;
@@ -542,10 +529,9 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.Location = new System.Drawing.Point(38, 566);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(51, 697);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 21);
+            this.label14.Size = new System.Drawing.Size(97, 28);
             this.label14.TabIndex = 52;
             this.label14.Text = "Total : Rp. ";
             // 
@@ -555,19 +541,18 @@
             this.labeltotal.BackColor = System.Drawing.Color.Transparent;
             this.labeltotal.Font = new System.Drawing.Font("Nirmala UI Semilight", 20F, System.Drawing.FontStyle.Bold);
             this.labeltotal.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labeltotal.Location = new System.Drawing.Point(116, 561);
-            this.labeltotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labeltotal.Location = new System.Drawing.Point(155, 690);
             this.labeltotal.Name = "labeltotal";
-            this.labeltotal.Size = new System.Drawing.Size(29, 37);
+            this.labeltotal.Size = new System.Drawing.Size(35, 46);
             this.labeltotal.TabIndex = 53;
             this.labeltotal.Text = "_";
             // 
             // Booking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(914, 640);
+            this.ClientSize = new System.Drawing.Size(1219, 788);
             this.Controls.Add(this.labeltotal);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button4);
@@ -602,7 +587,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Booking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Booking";
