@@ -225,6 +225,16 @@ namespace PC_04
                 MessageBox.Show("Konfirmasi password harus sama dengan password!", "Peringatan!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+            else if (checkSimilarNIK() == false)
+            {
+                MessageBox.Show("NIK telah digunakan!", "Peringatan!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else if (checkSimilarEmail() == false)
+            {
+                MessageBox.Show("Email telah digunakan!", "Peringatan!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
 
             return true;
         }
@@ -256,8 +266,92 @@ namespace PC_04
                 MessageBox.Show("Alamat harus diisi!", "Peringatan!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+            else if (checkSimilarNIK() == false)
+            {
+                MessageBox.Show("NIK telah digunakan!", "Peringatan!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else if (checkSimilarEmail() == false)
+            {
+                MessageBox.Show("Email telah digunakan!", "Peringatan!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
 
             return true;
+        }
+
+        bool checkSimilarEmail()
+        {
+            try
+            {
+                connection = new SqlConnection(Connection.connectionString);
+                connection.Open();
+
+                command = new SqlCommand("SELECT * FROM pegawai WHERE email = '" + textBox3.Text + "'", connection);
+                reader = command.ExecuteReader();
+                reader.Read();
+
+                if (reader.HasRows)
+                {
+                    reader.Close();
+                    connection.Close();
+                    return false;
+                }
+                else
+                {
+                    reader.Close();
+
+                    command = new SqlCommand("SELECT * FROM tamu WHERE email = '" + textBox3.Text + "'", connection);
+                    reader = command.ExecuteReader();
+                    reader.Read();
+
+                    if (reader.HasRows)
+                    {
+                        reader.Close();
+                        connection.Close();
+                        return false;
+                    }
+
+                    reader.Close();
+                    connection.Close();
+                    return true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        bool checkSimilarNIK()
+        {
+            try
+            {
+                connection = new SqlConnection(Connection.connectionString);
+                connection.Open();
+
+                command = new SqlCommand("SELECT * FROM tamu WHERE nik = '" + textBox1.Text + "'", connection);
+                reader = command.ExecuteReader();
+                reader.Read();
+
+                if (reader.HasRows)
+                {
+                    reader.Close();
+                    connection.Close();
+                    return false;
+                }
+
+                reader.Close();
+                connection.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

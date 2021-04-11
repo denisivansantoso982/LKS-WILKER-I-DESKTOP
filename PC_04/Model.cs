@@ -34,6 +34,7 @@ namespace PC_04
 
     class ColourModel
     {
-        public static Color primary = Color.FromArgb(130, 5, 34);
+        public static Color primary = Color.FromArgb(4, 124, 204);
+        public static Color secondary = Color.FromArgb(15, 155, 244);
     }
 }
