@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,6 +84,11 @@ namespace PC_04
         {
             Report report = new Report();
             report.ShowDialog();
+        }
+
+        private void AdminLandingPage_Paint(object sender, PaintEventArgs e)
+        {
+            //GradientBackground.gradient(e, this.ClientRectangle);
         }
     }
 }

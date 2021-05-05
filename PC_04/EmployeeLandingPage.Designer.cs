@@ -88,6 +88,7 @@
             this.label3.Size = new System.Drawing.Size(60, 37);
             this.label3.TabIndex = 2;
             this.label3.Text = "Õ";
+            this.label3.Click += new System.EventHandler(this.label9_Click);
             // 
             // label9
             // 

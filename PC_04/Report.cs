@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InteropExcel = Microsoft.Office.Interop.Excel;
 
 namespace PC_04
 {
@@ -102,6 +104,41 @@ namespace PC_04
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        void copyToClipboard()
+        {
+            gridReport.SelectAll();
+            DataObject obj = gridReport.GetClipboardContent();
+            if (obj != null)
+                Clipboard.SetDataObject(obj);
+        }
+
+        private void buttonExportExcel_Click(object sender, EventArgs e)
+        {
+            copyToClipboard();
+            InteropExcel.Application appExcel;
+            InteropExcel.Workbook appWorkbook;
+            InteropExcel.Worksheet appWorksheet;
+
+            appExcel = new InteropExcel.Application();
+            appExcel.Visible = true;
+            appWorkbook = appExcel.Workbooks.Add(1);
+            appWorksheet = appWorkbook.Worksheets[1];
+            appWorksheet = appWorkbook.ActiveSheet;
+            appWorksheet.Name = "Report";
+            appWorksheet.Cells.EntireColumn.ColumnWidth = 20;
+
+            for (int i = 1; i < gridReport.ColumnCount + 1; i++)
+                appWorksheet.Cells[1, i] = gridReport.Columns[i - 1].HeaderText;
+
+            for (int row = 1; row <= gridReport.RowCount; row++)
+            {
+                for (int column = 0; column < gridReport.ColumnCount; column++)
+                {
+                    appWorksheet.Cells[row + 1, column + 1] = gridReport.Rows[row - 1].Cells[column].Value.ToString();
+                }
+            }
         }
     }
 }

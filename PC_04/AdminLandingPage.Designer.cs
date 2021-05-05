@@ -352,6 +352,7 @@
             this.label17.Size = new System.Drawing.Size(60, 37);
             this.label17.TabIndex = 3;
             this.label17.Text = "Õ";
+            this.label17.Click += new System.EventHandler(this.panel6_Click);
             // 
             // label9
             // 
@@ -492,6 +493,7 @@
             this.Name = "AdminLandingPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LandingPage";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminLandingPage_Paint);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 namespace PC_04
 {
@@ -34,7 +36,26 @@ namespace PC_04
 
     class ColourModel
     {
-        public static Color primary = Color.FromArgb(4, 124, 204);
-        public static Color secondary = Color.FromArgb(15, 155, 244);
+        public static Color primary = Color.FromArgb(130, 5, 34);
+
+        // Flutter Theme
+        //public static Color primary = Color.FromArgb(4, 84, 164);
+        //public static Color secondary = Color.FromArgb(4, 124, 212);
+
+        // Assassin's Creed IV Theme
+        //public static Color primary = Color.FromArgb(12, 44, 36);
+        //public static Color secondary = Color.FromArgb(37, 82, 78);
     }
+
+    //class GradientBackground
+    //{
+    //    public static void gradient(PaintEventArgs e, Rectangle rectangle)
+    //    {
+
+    //        using (LinearGradientBrush brush = new LinearGradientBrush(rectangle, ColourModel.primary, ColourModel.secondary, 45F))
+    //        {
+    //            e.Graphics.FillRectangle(brush, rectangle);
+    //        }
+    //    }
+    //}
 }
