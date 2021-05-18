@@ -23,8 +23,6 @@ namespace PC_04
         public Tamu()
         {
             InitializeComponent();
-            this.BackColor = ColourModel.primary;
-            loadGridTamu();
         }
 
         void loadGridTamu()
@@ -416,6 +414,11 @@ namespace PC_04
         private void Tamu_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, this.ClientRectangle, Color.White, ButtonBorderStyle.Solid);
+        }
+
+        private void Tamu_Load(object sender, EventArgs e)
+        {
+            loadGridTamu();
         }
     }
 }

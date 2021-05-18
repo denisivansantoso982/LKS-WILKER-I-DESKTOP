@@ -190,6 +190,7 @@
             this.Name = "Report";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Report";
+            this.Load += new System.EventHandler(this.Report_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Report_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.gridReport)).EndInit();
             this.ResumeLayout(false);

@@ -16,7 +16,6 @@ namespace PC_04
         public AdminLandingPage()
         {
             InitializeComponent();
-            this.BackColor = ColourModel.primary;
             labelTime.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
             string[] name = PegawaiModel.nama.Split(' ');
             labelName.Text = name[0];
@@ -26,6 +25,9 @@ namespace PC_04
         {
             Pegawai pegawai = new Pegawai();
             pegawai.ShowDialog();
+
+            //Testing testing = new Testing();
+            //testing.ShowDialog();
         }
 
         private void panel2_Click(object sender, EventArgs e)

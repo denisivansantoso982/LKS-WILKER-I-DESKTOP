@@ -46,107 +46,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Booking.cs">
+    <Compile Include="Screen\Transaction\Booking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Booking.Designer.cs">
+    <Compile Include="Screen\Transaction\Booking.Designer.cs">
       <DependentUpon>Booking.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookingDetail.cs">
+    <Compile Include="Screen\Transaction\BookingDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookingDetail.Designer.cs">
+    <Compile Include="Screen\Transaction\BookingDetail.Designer.cs">
       <DependentUpon>BookingDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connection.cs" />
-    <Compile Include="EmployeeLandingPage.cs">
+    <Compile Include="Utils\Connection.cs" />
+    <Compile Include="Screen\Form\EmployeeLandingPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeLandingPage.Designer.cs">
+    <Compile Include="Screen\Form\EmployeeLandingPage.Designer.cs">
       <DependentUpon>EmployeeLandingPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuestLandingPage.cs">
+    <Compile Include="Screen\Form\GuestLandingPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuestLandingPage.Designer.cs">
+    <Compile Include="Screen\Form\GuestLandingPage.Designer.cs">
       <DependentUpon>GuestLandingPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminLandingPage.cs">
+    <Compile Include="Screen\Form\AdminLandingPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminLandingPage.Designer.cs">
+    <Compile Include="Screen\Form\AdminLandingPage.Designer.cs">
       <DependentUpon>AdminLandingPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="JenisKamar.cs">
+    <Compile Include="Screen\Master\JenisKamar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="JenisKamar.Designer.cs">
+    <Compile Include="Screen\Master\JenisKamar.Designer.cs">
       <DependentUpon>JenisKamar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kamar.cs">
+    <Compile Include="Screen\Master\Kamar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kamar.Designer.cs">
+    <Compile Include="Screen\Master\Kamar.Designer.cs">
       <DependentUpon>Kamar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Screen\Authentication\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Screen\Authentication\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model.cs" />
-    <Compile Include="Pegawai.cs">
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="Screen\Master\Pegawai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pegawai.Designer.cs">
+    <Compile Include="Screen\Master\Pegawai.Designer.cs">
       <DependentUpon>Pegawai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report.cs">
+    <Compile Include="Screen\Transaction\Report.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report.Designer.cs">
+    <Compile Include="Screen\Transaction\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
-    <Compile Include="Splash.cs">
+    <Compile Include="Screen\Form\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Splash.Designer.cs">
+    <Compile Include="Screen\Form\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tamu.cs">
+    <Compile Include="Screen\Master\Tamu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tamu.Designer.cs">
+    <Compile Include="Screen\Master\Tamu.Designer.cs">
       <DependentUpon>Tamu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminLandingPage.resx">
+    <EmbeddedResource Include="Screen\Form\AdminLandingPage.resx">
       <DependentUpon>AdminLandingPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Booking.resx">
+    <EmbeddedResource Include="Screen\Transaction\Booking.resx">
       <DependentUpon>Booking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookingDetail.resx">
+    <EmbeddedResource Include="Screen\Transaction\BookingDetail.resx">
       <DependentUpon>BookingDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeLandingPage.resx">
+    <EmbeddedResource Include="Screen\Form\EmployeeLandingPage.resx">
       <DependentUpon>EmployeeLandingPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuestLandingPage.resx">
+    <EmbeddedResource Include="Screen\Form\GuestLandingPage.resx">
       <DependentUpon>GuestLandingPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JenisKamar.resx">
+    <EmbeddedResource Include="Screen\Master\JenisKamar.resx">
       <DependentUpon>JenisKamar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kamar.resx">
+    <EmbeddedResource Include="Screen\Master\Kamar.resx">
       <DependentUpon>Kamar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Screen\Authentication\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pegawai.resx">
+    <EmbeddedResource Include="Screen\Master\Pegawai.resx">
       <DependentUpon>Pegawai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -158,13 +158,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Report.resx">
+    <EmbeddedResource Include="Screen\Transaction\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Splash.resx">
+    <EmbeddedResource Include="Screen\Form\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tamu.resx">
+    <EmbeddedResource Include="Screen\Master\Tamu.resx">
       <DependentUpon>Tamu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

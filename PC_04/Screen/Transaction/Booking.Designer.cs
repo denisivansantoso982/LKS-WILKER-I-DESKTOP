@@ -65,6 +65,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.labeltotal = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridPilihKamar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -269,12 +272,12 @@
             // textBoxTotal
             // 
             this.textBoxTotal.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTotal.Location = new System.Drawing.Point(821, 188);
+            this.textBoxTotal.Location = new System.Drawing.Point(866, 188);
             this.textBoxTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTotal.MaxLength = 50;
             this.textBoxTotal.Name = "textBoxTotal";
             this.textBoxTotal.ReadOnly = true;
-            this.textBoxTotal.Size = new System.Drawing.Size(331, 34);
+            this.textBoxTotal.Size = new System.Drawing.Size(286, 34);
             this.textBoxTotal.TabIndex = 31;
             this.textBoxTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxJumlahKamar_KeyPress);
             // 
@@ -293,11 +296,11 @@
             // textBoxBayar
             // 
             this.textBoxBayar.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBayar.Location = new System.Drawing.Point(821, 244);
+            this.textBoxBayar.Location = new System.Drawing.Point(866, 244);
             this.textBoxBayar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxBayar.MaxLength = 50;
             this.textBoxBayar.Name = "textBoxBayar";
-            this.textBoxBayar.Size = new System.Drawing.Size(331, 34);
+            this.textBoxBayar.Size = new System.Drawing.Size(286, 34);
             this.textBoxBayar.TabIndex = 33;
             this.textBoxBayar.Text = "0";
             this.textBoxBayar.TextChanged += new System.EventHandler(this.textBoxBayar_TextChanged);
@@ -318,12 +321,12 @@
             // textBoxSisa
             // 
             this.textBoxSisa.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSisa.Location = new System.Drawing.Point(821, 300);
+            this.textBoxSisa.Location = new System.Drawing.Point(866, 300);
             this.textBoxSisa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSisa.MaxLength = 50;
             this.textBoxSisa.Name = "textBoxSisa";
             this.textBoxSisa.ReadOnly = true;
-            this.textBoxSisa.Size = new System.Drawing.Size(331, 34);
+            this.textBoxSisa.Size = new System.Drawing.Size(286, 34);
             this.textBoxSisa.TabIndex = 35;
             this.textBoxSisa.Text = "0";
             this.textBoxSisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxJumlahKamar_KeyPress);
@@ -349,7 +352,7 @@
             this.comboBoxJenis.Location = new System.Drawing.Point(208, 484);
             this.comboBoxJenis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxJenis.Name = "comboBoxJenis";
-            this.comboBoxJenis.Size = new System.Drawing.Size(303, 36);
+            this.comboBoxJenis.Size = new System.Drawing.Size(352, 36);
             this.comboBoxJenis.TabIndex = 39;
             this.comboBoxJenis.SelectionChangeCommitted += new System.EventHandler(this.comboBoxJenis_SelectionChangeCommitted);
             // 
@@ -386,7 +389,7 @@
             this.comboBoxNoKamar.Location = new System.Drawing.Point(208, 543);
             this.comboBoxNoKamar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxNoKamar.Name = "comboBoxNoKamar";
-            this.comboBoxNoKamar.Size = new System.Drawing.Size(303, 36);
+            this.comboBoxNoKamar.Size = new System.Drawing.Size(352, 36);
             this.comboBoxNoKamar.TabIndex = 42;
             // 
             // gridPilihKamar
@@ -450,7 +453,7 @@
             this.buttonTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTambah.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.buttonTambah.ForeColor = System.Drawing.Color.White;
-            this.buttonTambah.Location = new System.Drawing.Point(283, 599);
+            this.buttonTambah.Location = new System.Drawing.Point(332, 599);
             this.buttonTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTambah.Name = "buttonTambah";
             this.buttonTambah.Size = new System.Drawing.Size(111, 34);
@@ -470,7 +473,7 @@
             this.buttonHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHapus.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.buttonHapus.ForeColor = System.Drawing.Color.White;
-            this.buttonHapus.Location = new System.Drawing.Point(399, 599);
+            this.buttonHapus.Location = new System.Drawing.Point(449, 599);
             this.buttonHapus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonHapus.Name = "buttonHapus";
             this.buttonHapus.Size = new System.Drawing.Size(111, 34);
@@ -547,12 +550,51 @@
             this.labeltotal.TabIndex = 53;
             this.labeltotal.Text = "_";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label15.Location = new System.Drawing.Point(816, 191);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(44, 28);
+            this.label15.TabIndex = 54;
+            this.label15.Text = "Rp. ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label16.Location = new System.Drawing.Point(816, 247);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(44, 28);
+            this.label16.TabIndex = 55;
+            this.label16.Text = "Rp. ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F);
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Location = new System.Drawing.Point(816, 303);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(44, 28);
+            this.label17.TabIndex = 56;
+            this.label17.Text = "Rp. ";
+            // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1219, 788);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.labeltotal);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button4);
@@ -633,5 +675,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label labeltotal;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }

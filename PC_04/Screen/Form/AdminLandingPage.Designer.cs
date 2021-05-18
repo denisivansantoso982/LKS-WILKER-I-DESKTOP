@@ -512,7 +512,7 @@
             this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            this.BackColor = ColourModel.primary;
         }
 
         #endregion

@@ -24,8 +24,6 @@ namespace PC_04
         public Report()
         {
             InitializeComponent();
-            loadGrid();
-            BackColor = ColourModel.primary;
         }
 
         void loadGrid()
@@ -106,17 +104,9 @@ namespace PC_04
             this.Close();
         }
 
-        void copyToClipboard()
-        {
-            gridReport.SelectAll();
-            DataObject obj = gridReport.GetClipboardContent();
-            if (obj != null)
-                Clipboard.SetDataObject(obj);
-        }
-
         private void buttonExportExcel_Click(object sender, EventArgs e)
         {
-            copyToClipboard();
+            UseWaitCursor = true;
             InteropExcel.Application appExcel;
             InteropExcel.Workbook appWorkbook;
             InteropExcel.Worksheet appWorksheet;
@@ -139,6 +129,14 @@ namespace PC_04
                     appWorksheet.Cells[row + 1, column + 1] = gridReport.Rows[row - 1].Cells[column].Value.ToString();
                 }
             }
+
+            UseWaitCursor = false;
+        }
+
+        private void Report_Load(object sender, EventArgs e)
+        {
+
+            loadGrid();
         }
     }
 }
